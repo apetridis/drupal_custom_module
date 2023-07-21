@@ -1,0 +1,18 @@
+# Custom module template information file
+name: Custom Module Template 
+
+# Type of the extension, in this case, it's a module
+type: module
+
+# Short description of the module
+description: 'Custom module template for drupal'
+
+# The package to which this module belongs
+# Helps in organising modules in the administrative interface
+package: Custom
+
+# Version number of the module
+version: '1.0'
+
+# The version of Drupal core required for this module to work correctly
+core_version_requirement: 9.x

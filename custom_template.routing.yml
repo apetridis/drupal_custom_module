@@ -1,0 +1,10 @@
+# Custom Module Template Routes
+# Defines the URL routes for the Custom Module
+
+custom.content:
+  path: '/custom-path'
+  defaults:
+    _controller: '\Drupal\custom_template\Controller\CustomController::some_function'
+    _title: 'Custom'
+  requirements:
+    _permission: 'access content'
