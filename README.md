@@ -38,12 +38,12 @@ try {
     redirect: 'follow'
     };
     var cookie;
-    fetch("https://solvay-education-programme.web.cern.ch/session/token?_format=json", requestOptions)
+    fetch("https://my_drupal_domain/session/token?_format=json", requestOptions)
     .then(response => response.text())
     .then(result => cookie = result)
     .catch(error => console.log('error', error));
 
-    fetch('https://solvay-education-programme.web.cern.ch/get/parameter_1/parameter_2/?_format=json')
+    fetch('https://my_drupal_domain/get/parameter_1/parameter_2/?_format=json')
                         .then(response => response.json())    
                         .then(data => {                 
                                 document.getElementById("get_answer").innerHTML = data;
@@ -71,7 +71,7 @@ try {
         body: raw,
         redirect: 'follow'
     };
-    fetch("https://solvay-education-programme.web.cern.ch/post/something?_format=json", requestOptions)
+    fetch("https://my_drupal_domain/post/something?_format=json", requestOptions)
         .then(response => response.text())
         .catch(error => console.log('error', error));
 } catch (error) {
